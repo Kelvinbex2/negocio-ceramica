@@ -2,12 +2,35 @@
 
 classDiagram
 
-class Alfarero
+class Runnable {
+    <<Interface>>
+}
 
-class Vendedor
+class Alfarero {
+    - Obra
+    + Alfarero(Obra)
+}
 
-class Galeria
+class Vendedor {
+    - TIEMPO_ESPERA $
+    - Obra
+    + Vendedor(Obra)
+}
 
-class Obra
+class Galeria {
+    +static int TOTAL_OBRAS
+    +main(String[] args)
+  }
+
+class Obra {
+    + String MSG_VENDER
+    + exponer(String id) void
+    + vender() void
+}
+
+Runnable <|.. Alfarero
+Runnable <|.. Vendedor
+Alfarero ..> Obra
+Vendedor ..> Obra
 
 ```
