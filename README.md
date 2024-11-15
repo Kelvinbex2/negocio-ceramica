@@ -2,12 +2,29 @@
 
 classDiagram
 
-class Alfarero
+class Runnable {
+    <<Interface>>
+}
 
-class Vendedor
+class Alfarero {
+    <<es.etg.dam>>
+}
 
-class Galeria
+class Vendedor {
+    <<es.etg.dam>>
+}
 
-class Obra
+class Galeria {
+    <<es.etg.dam>>
+
+}
+
+class Obra {
+    <<es.etg.dam>>
+    + vender()
+}
+
+Runnable <|-- Alfarero
+Runnable <|-- Vendedor
 
 ```
