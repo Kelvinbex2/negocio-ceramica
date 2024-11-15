@@ -2,20 +2,12 @@
 
 classDiagram
 
-class Alfarero {
+class Alfarero
 
-}
+class Vendedor
 
-class Vendedor {
+class Galeria
 
-}
-
-class Galeria {
-
-}
-
-class Obra {
-    
-}
+class Obra
 
 ```
