@@ -10,7 +10,7 @@ public class Obra {
 
     public static final int TAMANIO_OBRA = 1;
     private int numObra = 0;
-    private boolean ocupado = false;
+  
 
     public synchronized void agregar(String id) throws InterruptedException {
 
