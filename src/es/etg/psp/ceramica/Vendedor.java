@@ -3,6 +3,8 @@ package es.etg.psp.ceramica;
 
 public class Vendedor implements Runnable {
     private static final int TIEMPO = 1000;
+    private static final String ESPACIO = " ";
+    
     private String nombre;
     private Obra obra;
 
@@ -20,7 +22,7 @@ public class Vendedor implements Runnable {
         try {
             while (true) {
                 Thread.sleep(TIEMPO);
-            obra.vender(nombre);
+            obra.vender(Thread.currentThread().getName() + ESPACIO + nombre);
             }
             
         } catch (InterruptedException e) {
